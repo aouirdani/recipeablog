@@ -10,7 +10,7 @@
       "host": "localhost",
       "user": "root",
       "password": "password",
-      "database": "railway"
+      "database": "ghost"
     }
   },
   "mail": {
