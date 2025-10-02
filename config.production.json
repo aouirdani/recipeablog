@@ -1,0 +1,27 @@
+{
+  "url": "https://your-domain.up.railway.app",
+  "server": {
+    "port": 2368,
+    "host": "0.0.0.0"
+  },
+  "database": {
+    "client": "mysql2",
+    "connection": {
+      "host": "process.env.MYSQLHOST",
+      "user": "process.env.MYSQLUSER",
+      "password": "process.env.MYSQLPASSWORD",
+      "database": "process.env.MYSQLDATABASE",
+      "port": "process.env.MYSQLPORT"
+    }
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": ["stdout"]
+  },
+  "process": "local",
+  "paths": {
+    "contentPath": "content"
+  }
+}
