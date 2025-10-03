@@ -1,17 +1,12 @@
 {
-  "url": "https://howtorecipes.com:2368",
+  "url": "https://howtorecipes.com",
   "server": {
     "port": 2368,
     "host": "0.0.0.0"
   },
   "database": {
     "client": "mysql2",
-    "connection": {
-      "host": "localhost",
-      "user": "root",
-      "password": "password",
-      "database": "ghost"
-    }
+    "connection": "${MYSQL_URL}"
   },
   "mail": {
     "transport": "Direct"
