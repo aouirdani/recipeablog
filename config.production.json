@@ -6,7 +6,7 @@
   },
   "database": {
     "client": "mysql2",
-    "connection": "${MYSQL_URL}"
+    "connection": "mysql://${MYSQLUSER}:${MYSQLPASSWORD}@${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}"
   },
   "mail": {
     "transport": "Direct"
